@@ -129,6 +129,7 @@ $(mbtiles): $(layers_files)
 		-P \
 		--force \
 		--no-tile-compression \
+		--no-tile-stats \
 		--maximum-zoom=g \
 		--generate-ids \
 		--hilbert \
