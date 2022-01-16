@@ -26,7 +26,7 @@ start:
 serve:
 	http-server docs
 
-# Download OpenStreetMap data as Protocolbuffer Binary Format file to /tmp
+# Download OpenStreetMap data as Protocolbuffer Binary Format file
 $(pbf):
 	mkdir -p $(@D)
 	curl \
@@ -34,20 +34,14 @@ $(pbf):
 		--output $(pbf) \
 		https://download.geofabrik.de/$(REGION)-latest.osm.pbf
 
-# Export pbf file as GeoJSONSeq Format file to /tmp
-$(geojson):
-	osmium export \
-		--output-format=geojsonseq \
-		--output=$(geojson) \
-		$(pbf)
-
+# Convert Protocolbuffer Binary Format file to MBTiles format file
 $(mbtiles):
 	mkdir -p $(@D)
 	docker run --rm --mount type=bind,source=$(CURDIR)/tmp,target=/tmp tilemaker \
 		--input /$(pbf) \
 		--output /$(mbtiles)
 
-# Split MBTiles Format file into zxy Protocolbuffer Binary Format files
+# Split MBTiles Format file to zxy orderd Protocolbuffer Binary Format files
 $(zxy_metadata):
 	mkdir -p $(@D)
 	tile-join \
