@@ -20,11 +20,11 @@ make clean
 make
 ```
 
-## Run map server
+## Preview map
 
 ```bash
-npm ci
+npm i -g tileserver-gl-light
 make start
 ```
 
-Open http://localhost:8080/
+Open http://localhost:3000/
