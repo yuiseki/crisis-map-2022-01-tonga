@@ -1,0 +1,17 @@
+{
+  "name": "vector-tile",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "echo \"Error: no main specified\" && exit 1",
+  "scripts": {
+    "start": "tileserver-gl-light tiles/region.mbtiles",
+    "build": "make",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yui Matsumura <yuiseki@gmail.com> (https://twitter.com/yuiseki_)",
+  "license": "ISC",
+  "dependencies": {
+    "tileserver-gl-light": "^3.1.1"
+  }
+}
