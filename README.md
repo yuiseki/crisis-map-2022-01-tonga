@@ -1,6 +1,6 @@
-# osm-crisis-map-2022-01-tonga
+# crisis-map-2022-01-tonga
 
-## build
+## Build
 
 ```bash
 make
@@ -13,14 +13,14 @@ It will produce
 
 NOTE: zxy style vector tile is under development.
 
-## rebuild
+## Rebuild
 
 ```bash
 make clean
 make
 ```
 
-## run
+## Run map server
 
 ```bash
 npm ci
