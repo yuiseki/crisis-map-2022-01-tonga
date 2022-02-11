@@ -11,7 +11,12 @@
   "description": "Tile config based on OpenMapTiles schema",
   "minzoom": 0,
   "maxzoom": 14,
-  "bounds": [-178.648747, -25.68413, -171.3053, -14.15464],
+  "bounds": [
+    -178.648747,
+    -25.68413,
+    -171.3053,
+    -14.15464
+  ],
   "vector_layers": [
     {
       "id": "place",
@@ -165,6 +170,10 @@
       "maxzoom": 14
     }
   ],
-  "center": [-174.97702349999997, -19.919385, 7],
+  "center": [
+    -174.97702349999997,
+    -19.919385,
+    7
+  ],
   "tilejson": "2.0.0"
 }

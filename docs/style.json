@@ -24,7 +24,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://yuiseki.github.io/crisis-map-2022-01-tonga/region.json"
+      "url": "https://yuiseki.github.io/crisis-map-2022-01-tonga/tiles.json"
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
