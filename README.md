@@ -18,12 +18,6 @@ cd tippecanoe
 docker build . -t tippecanoe
 ```
 
-### Setup npm commands
-
-```bash
-npm i -g tileserver-gl-light
-```
-
 ## Build
 
 ```bash

@@ -29,10 +29,6 @@ stop_tileserver: tmp/tileserver.pid
 tmp/tileserver.pid:
 	tileserver-gl-light $(mbtiles) --port 3000 & echo $$! > $@
 
-.PHONY: serve
-serve:
-	http-server docs -p 3000
-
 docs/tiles.json: start_tileserver
 	sleep 10
 	curl http://localhost:3000/data/v3.json | jq . > $@
